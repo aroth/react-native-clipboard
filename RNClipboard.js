@@ -9,6 +9,10 @@ var Clipboard = {
 
     set(content) {
         RNClipboard.set(content);
+    },
+    
+    setImageWithTag(tag, successCallback, errorCallback) {
+        RNClipboard.setImageWithTag(tag, successCallback, errorCallback);      
     }
 };
 
