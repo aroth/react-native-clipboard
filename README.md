@@ -77,7 +77,12 @@ Clipboard.get(content => {
   console.log(content);
 });
 
+// set text
 Clipboard.set('abc');
+
+// set image
+var imageTag = 'http://i.imgur.com/A39hU02.jpg';
+Clipboard.setImageWithTag( imageTag, ()=>{ console.log(success) }, (error)=>{ console.log(error) });
 
 ```
 
